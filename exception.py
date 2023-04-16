@@ -1,0 +1,2 @@
+class incorectPathWay(Exception):
+    pass

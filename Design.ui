@@ -69,7 +69,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="nodeSpinBox"/>
+          <widget class="QSpinBox" name="nodeSpinBox">
+           <property name="maximum">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -83,7 +87,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="pathSpinBox"/>
+          <widget class="QSpinBox" name="pathSpinBox">
+           <property name="maximum">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -100,6 +108,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <widget class="QPushButton" name="createButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>Создать</string>
          </property>
@@ -107,6 +118,9 @@
        </item>
        <item>
         <widget class="QPushButton" name="nextButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>Далее</string>
          </property>
@@ -127,7 +141,17 @@
         </widget>
        </item>
        <item>
-        <widget class="QGraphicsView" name="graphicsView"/>
+        <widget class="QGraphicsView" name="graphicsView">
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="interactive">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
